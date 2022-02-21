@@ -3,6 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import NavBar from "./navbar";
 import Home from "./home";
 
+// JSON Server runs on localhost:3000!!! Send requests to that URL.
+
 function App() {
   return (
     <div className="App">
