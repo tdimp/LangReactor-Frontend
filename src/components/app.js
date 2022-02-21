@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./navbar";
 import Home from "./home";
+import About from "./about";
 
 // JSON Server runs on localhost:3000!!! Send requests to that URL.
 
@@ -12,6 +13,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route>
+          <About />
         </Route>
       </Switch>
     </div>

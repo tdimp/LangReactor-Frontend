@@ -10,6 +10,12 @@ function NavBar() {
             >
                 Home
             </NavLink>
+            <NavLink
+                to="/about"
+                exact
+            >
+                About
+            </NavLink>
         </div>
     );
 }
