@@ -16,6 +16,12 @@ function NavBar() {
             >
                 About
             </NavLink>
+            <NavLink
+                to="/translator"
+                exact
+            >
+                Translator
+            </NavLink>
         </div>
     );
 }
