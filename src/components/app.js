@@ -14,11 +14,12 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
-        </Route><Route>
-          <Translator />
         </Route>
-        <Route>
-          <About exact path="/about" />
+        <Route path="/translator">
+        <Translator />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         
       </Switch>
