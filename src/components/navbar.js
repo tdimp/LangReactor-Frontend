@@ -22,6 +22,12 @@ function NavBar() {
             >
                 Translator
             </NavLink>
+            <NavLink
+                to="/cardpage"
+                exact
+            >
+                New Card Page
+            </NavLink>
         </div>
     );
 }

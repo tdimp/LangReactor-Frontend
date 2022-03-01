@@ -4,7 +4,7 @@ import NavBar from "./navbar";
 import Home from "./home";
 import About from "./about";
 import Translator from "./translator";
-import Deck from "./deck";
+import CardPage from "./cardpage";
 
 // JSON Server runs on localhost:3000!!! Send requests to that URL.
 
@@ -21,6 +21,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/cardpage">
+          <CardPage />
         </Route>
       </Switch>
     </div>
