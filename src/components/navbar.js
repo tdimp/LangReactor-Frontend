@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
     return (
-        <div>
+        <div className="navbar">
             <NavLink
                 to="/"
                 exact
@@ -23,10 +23,16 @@ function NavBar() {
                 Translator
             </NavLink>
             <NavLink
-                to="/cardpage"
+                to="/flashcarddeck"
                 exact
             >
-                New Card Page
+                Flash Card Deck
+            </NavLink>
+            <NavLink
+                to="/addnewcard"
+                exact
+            >
+                Add New Card
             </NavLink>
         </div>
     );

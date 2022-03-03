@@ -6,8 +6,9 @@ function FlashCard({
 
     return (
         <div className="card">
-            <h1>{targetLanguageText}</h1>
+            <h2>{targetLanguageText}</h2>
             <img className="flashcard-image" src={image}/>
+            <button className="flashcard-button">CLICK</button>
         </div>
     )
 }

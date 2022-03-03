@@ -5,8 +5,16 @@ body {
   font-size: 16px;
 }
 
+.navbar {
+  padding: 1rem;
+  display: flex;
+  background-color: bisque;
+}
+
 a {
-  color: red;
+  color: rgb(136, 1, 1);
+  font-weight: bold;
+  padding: 5px
 }
 
 input {
@@ -21,37 +29,34 @@ input {
   text-align: center;
   border: grey solid 1px;
   padding: 1.1rem;
-  width: 10rem;
-  height: 15rem;
+  width: 25rem;
+  height: 40rem;
   display: inline-grid;
   margin: 1rem 1rem;
-  box-shadow: 1px 2px rgb(122, 6, 6);
+  box-shadow: 1px 2px #cdecf9;
   flex-direction: column;
 }
 
 .flashcard-image {
-  width: 75%;
+  width: 100%;
   height: auto;
+  max-height: 25rem;
 }
 
-form {
-  
+input[type=text], select {
+  width: 51%;
+  height: 100px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-#output {
-  right: 5px;
-}
-
-button {
-  margin: 10px;
-}
-
-select {
-  margin: 10px;
-}
-
-label {
-  margin: 10px;
+button[type=submit], select {
+  width: 51%;
+  height: 50px;
 }
 
 code {

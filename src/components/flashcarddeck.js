@@ -3,7 +3,7 @@ import NewCardForm from "./newcardform";
 import CardList from "./cardlist";
 
 
-function CardPage() {
+function FlashCardDeck() {
 
     useEffect(() => {
         fetch(`http://localhost:3004/flashcards`)
@@ -16,10 +16,9 @@ function CardPage() {
 
     return (
         <main>
-            <NewCardForm />
             <CardList cards={cards} />
         </main>
     )
 }
 
-export default CardPage;
+export default FlashCardDeck;

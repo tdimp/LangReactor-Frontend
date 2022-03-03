@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+// Use State here to dynamically show a preview of the new card before it is
+// submitted to the database.
+
 function NewCardForm() {
     const [targetLanguageText, setTargetLanguageText] = useState("");
     const [sourceLanguageText, setSourceLanguageText] = useState("");
@@ -41,6 +44,13 @@ function NewCardForm() {
                     placeholder="Source Language Text (optional)"
                     value={sourceLanguageText}
                     onChange={(e) => setSourceLanguageText(e.target.value)}
+                />
+                <input
+                    type="text"
+                    name="image"
+                    placeholder="Image URL (optional)"
+                    value={image}
+                    onChange={(e) => setImage(e.target.value)}
                 />
                 <button type="submit">Submit</button>
             </form>
