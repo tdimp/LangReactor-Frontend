@@ -8,7 +8,7 @@ function NewCardForm() {
     function handleFormSubmit(e) {
         e.preventDefault();
 
-        fetch(`http:localhost:3004/deck`, {
+        fetch(`http://localhost:3004/flashcards`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -33,7 +33,16 @@ function NewCardForm() {
                     placeholder="Target Language Text"
                     value={targetLanguageText}
                     onChange={(e) => setTargetLanguageText(e.target.value)}
+                    required
                 />
+                <input
+                    type="text"
+                    name="source"
+                    placeholder="Source Language Text (optional)"
+                    value={sourceLanguageText}
+                    onChange={(e) => setSourceLanguageText(e.target.value)}
+                />
+                <button type="submit">Submit</button>
             </form>
         </div>
     )
