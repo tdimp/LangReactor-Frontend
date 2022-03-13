@@ -22,15 +22,14 @@ function Translator() {
         <div>
             <form id="input" onSubmit={(e) => handleSubmit(e)}>
                 <h1>Translator</h1>
-                <label htmlFor="input-text">Enter Text</label>
-                <input type="text" placeholder="Copy your text here" />
+                <input id="translator-input" type="text" placeholder="Copy your text here" />
                 <select id="target-language">
                     <option value="en">English</option>
                     <option value="de">German</option>
                     <option value="es">Spanish</option>
                     <option value="fr">French</option>
                 </select>
-                <button>Translate</button>
+                <button id="translator-button">Translate</button>
             </form>
             <div id="output">
                 <h1>{translation}</h1>

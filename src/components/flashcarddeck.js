@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NewCardForm from "./newcardform";
-import CardList from "./cardlist";
+import FlashCard from "./flashcard";
 
 
 function FlashCardDeck() {
@@ -12,11 +12,23 @@ function FlashCardDeck() {
     }, []);
 
     const [cards, setCards] = useState([]);
-    console.log(cards)
+
+    function handleDeleteClick(e) {
+        console.log(e.target);
+    }
+
 
     return (
         <main>
-            <CardList cards={cards} />
+            <ul>
+            {cards.map((card) => (
+                <FlashCard
+                    key={card.id}
+                    card={card}
+                    handleDelete={handleDeleteClick}
+                />
+            ))}
+        </ul>
         </main>
     )
 }

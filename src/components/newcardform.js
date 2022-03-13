@@ -41,9 +41,10 @@ function NewCardForm() {
                 <input
                     type="text"
                     name="source"
-                    placeholder="Source Language Text (optional)"
+                    placeholder="Source Language Text"
                     value={sourceLanguageText}
                     onChange={(e) => setSourceLanguageText(e.target.value)}
+                    required
                 />
                 <input
                     type="text"
