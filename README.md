@@ -23,6 +23,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 # Getting Started with JSON Server
 
-The backend for this project is written for JSON Server (https://github.com/tdimp/phase-2-project-back). To use LangReactor, you must have JSON Server installed and running. Please visit [this website](https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d) for more information on JSON Server and how to install it.
+The backend for this project is written for JSON Server. To use LangReactor, you must have JSON Server installed and running. Please visit [this website](https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d) for more information on JSON Server and how to install it.
 
-Once you have JSON Server installed, you will need to clone this repository to your machine and initialize it using the following command: ```json-server --watch db.json --port 3004```.
+Once you have JSON Server installed, you will need to clone [this repository](https://github.com/tdimp/phase-2-project-back) to your machine and initialize it using the following command: ```json-server --watch db.json --port 3004```.
