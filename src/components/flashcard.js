@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 
 function FlashCard({
-    card: {id, targetLanguageText, sourceLanguageText, image, handleDelete}
+    card: {
+        id, 
+        targetLanguageText, 
+        sourceLanguageText, 
+        image, 
+    }, handleDelete
 }) {
 
     const [isSourceText, setIsSourceText] = useState(false);
@@ -13,9 +18,16 @@ function FlashCard({
         setIsFlipped(!isFlipped);
     }
 
+    function handleDeleteClick() {
+        fetch(`http://localhost:3004/flashcards/${id}`, {
+            method: "DELETE",
+        });
+        handleDelete(id);
+    }
+
     return (
         <div className={isFlipped ? "flipped-card" : "default-card"}>
-            <button className="flashcard-delete" onClick={handleDelete}>X</button>
+            <button className="flashcard-delete" onClick={handleDeleteClick}>X</button>
             <h2>{isSourceText ? sourceLanguageText : targetLanguageText}</h2>
             <img className="flashcard-image" src={image}/>
             <button className="flashcard-button" onClick={handleFlipClick}>FLIP CARD</button>
