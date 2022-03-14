@@ -27,8 +27,8 @@ function NewCardForm() {
     }
 
     return (
-        <div className="new-card-form">
-            <h2>Add Flashcard</h2>
+        <div id="new-card-form">
+            <h1>Add Flashcard</h1>
             <form onSubmit={handleFormSubmit}>
                 <input 
                     type="text"

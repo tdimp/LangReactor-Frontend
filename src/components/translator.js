@@ -19,8 +19,8 @@ function Translator() {
     console.log(translation)
     
     return (
-        <div>
-            <form id="input" onSubmit={(e) => handleSubmit(e)}>
+        <div id="translator">
+            <form id="translator-input" onSubmit={(e) => handleSubmit(e)}>
                 <h1>Translator</h1>
                 <input id="translator-input" type="text" placeholder="Copy your text here" />
                 <select id="target-language">

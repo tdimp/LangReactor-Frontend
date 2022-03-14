@@ -15,7 +15,6 @@ function FlashCardDeck() {
     const [cards, setCards] = useState([]);
 
     function handleDeleteClick(id) {
-        console.log(id.target)
         const newDeck = cards.filter((card) => card.id !== id);
         setCards(newDeck);
     }
